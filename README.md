@@ -8,6 +8,7 @@ sudo ./setup.sh
 ```
 
 - 필수 sw를 설치하고 작동을 위한 .bash_profile_yadm 과 .vimrc를 배포한다.
+- nerd font 설치 필요 : https://www.nerdfonts.com/font-downloads
 
 ## 설치 목록
 
@@ -18,6 +19,7 @@ zoxide
 eza
 direnv
 jq
+starship
 
 ## cmatrix
 
@@ -69,4 +71,10 @@ direnv revoke (현재 디렉토리 제외)
 ]
 jq ‘.[].title’  
 jq '.[] | select(.body | contains("distinctio odio"))’
+
 ```
+
+## starship
+
+- Starship은 모든 쉘과 호환되는 빠르고 커스터마이징 가능한 프롬프트
+
