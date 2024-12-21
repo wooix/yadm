@@ -1,0 +1,6 @@
+alias cmatrix='cmatrix -bu 10'
+alias ls='eza --icons --group-directories-first'
+alias bat='batcat'
+
+eval "$(starship init bash)"
+eval "$(direnv hook bash)"
