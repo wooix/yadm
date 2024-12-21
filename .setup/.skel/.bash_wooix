@@ -5,5 +5,7 @@ alias bat='batcat'
 TMOUT=600
 trap 'cmatrix; exit' SIGALRM
 
+set -o vi 
+
 eval "$(starship init bash)"
 eval "$(direnv hook bash)"

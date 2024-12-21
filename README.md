@@ -19,6 +19,8 @@ zoxide
 eza
 direnv
 jq
+glow(수동설치)
+pandoc
 starship
 
 ## cmatrix
@@ -72,6 +74,26 @@ direnv revoke (현재 디렉토리 제외)
 jq ‘.[].title’  
 jq '.[] | select(.body | contains("distinctio odio"))’
 
+```
+
+## glow(수동설치)
+
+- Render markdown on the CLI
+
+```
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg
+echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
+sudo apt update && sudo apt install glow
+```
+
+## pandoc
+
+- Markdown을 다양한 포맷으로 변환하며, 쉘에서 보기에도 적합합니다.
+
+```bash
+pandoc README.md -t <format>
+man pandoc에서 확인
 ```
 
 ## starship

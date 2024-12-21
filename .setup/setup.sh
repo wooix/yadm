@@ -29,7 +29,7 @@ checkstall() {
 
 }
 
-for sw in cmatrix bat fzf zoxide eza direnv jq 
+for sw in cmatrix bat fzf zoxide eza direnv jq pandoc
 do
     echo $sw
     checkstall ${sw}
